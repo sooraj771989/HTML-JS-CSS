@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Text is wrapped in Graph nodes</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <script
+    type="text/javascript"
+    src="//d3js.org/d3.v3.js"
+    
+  ></script>
+
+    <link rel="stylesheet" type="text/css" href="/css/result-light.css">
+
+
+  <style id="compiled-css" type="text/css">
+      .node {
+cursor: pointer;
+}
+
+.node circle {
+fill: #fff;
+stroke: steelblue;
+stroke-width: 3px;
+}
+
+.node text {
+font: 12px sans-serif;
+}
+
+.link {
+fill: none;
+stroke: #ccc;
+stroke-width: 2px;
+}
+
+  </style>
+
+
+  <!-- TODO: Missing CoffeeScript 2 -->
+
+  <script type="text/javascript">//<![CDATA[
+
+    window.onload=function(){
+      
+var json = 
+ {
+    "name": "Top LevelTop dklasd adlksdlasda daslkjdjlas LevelTop LevelTop LevelTop LevelTop LevelTop LevelTop LevelTop LevelTop LevelTop LevelTop LevelTop LevelTop Level",
+    "icon": "images/symbol_datasource.png",
+    "parent": "null",
+    "children": [
+      {
+        "name": "Parent1Top LevelTop dklasd adlksdlasda daslkjdjlas LevelTop LevelTop LevelTop LevelTop LevelTop LevelTop LevelTop LevelTop LevelTop LevelTop LevelTop LevelTop Level",
+        "parent": "Top LevelTop LevelTop dklasd adlksdlasda daslkjdjlas LevelTop LevelTop LevelTop LevelTop LevelTop LevelTop LevelTop LevelTop LevelTop LevelTop LevelTop LevelTop Level",
+         "icon": "images/symbol_dashboard.png",
+        "children": [
+          {
+            "name": "hdkjashd kjashd kjahsk jdahs kjdah skdhaskjdha",
+            "icon": "images/symbol_wksheet.png",
+            "parent": "Level 2: A"
+          },
+          {
+            "name": "2",
+            "icon": "images/symbol_wksheet.png",
+            "parent": "Level 2: A"
+          },
+          {
+            "name": "3",
+            "icon": "images/symbol_wksheet.png",
+            "parent": "Level 2: A"
+          },
+          {
+            "name": "4",
+            "parent": "Level 2: A"
+          },
+          {
+            "name": "5",
+            "icon": "images/symbol_wksheet.png",
+            "parent": "Level 2: A"
+          },
+          {
+            "name": "6",
+            "icon": "images/symbol_wksheet.png",
+            "parent": "Level 2: A"
+          },
+          {
+            "name": "7",
+            "icon": "images/symbol_wksheet.png",
+            "parent": "Level 2: A"
+          },
+          {
+            "name": "8",
+            "icon": "images/symbol_wksheet.png",
+            "parent": "Level 2: A"
+          },
+          {
+            "name": "9",
+            "icon": "images/symbol_wksheet.png",
+            "parent": "Level 2: A"
+          },
+          {
+            "name": "10",
+            "icon": "images/symbol_wksheet.png",
+            "parent": "Level 2: A"
+          }
+        ]
+      },
+      {
+        "name": "Parent2",
+        "parent": "Top Level",
+         "icon": "images/symbol_dashboard.png",
+        "children": [
+          {
+            "name": "1",
+            "icon": "images/symbol_wksheet.png",
+            "parent": "Level 2: A"
+          },
+          {
+            "name": "2",
+            "icon": "images/symbol_wksheet.png",
+            "parent": "Level 2: A"
+          },
+          {
+            "name": "3",
+            "icon": "images/symbol_wksheet.png",
+            "parent": "Level 2: A"
+          },
+          {
+            "name": "4",
+            "icon": "images/symbol_wksheet.png",
+            "parent": "Level 2: A"
+          },
+          {
+            "name": "5",
+            "icon": "images/symbol_wksheet.png",
+            "parent": "Level 2: A"
+          },
+          {
+            "name": "6",
+            "icon": "images/symbol_wksheet.png",
+            "parent": "Level 2: A"
+          },
+          {
+            "name": "7",
+            "icon": "images/symbol_wksheet.png",
+            "parent": "Level 2: A"
+          },
+          {
+            "name": "8",
+            "icon": "images/symbol_wksheet.png",
+            "parent": "Level 2: A"
+          },
+          {
+            "name": "9",
+            "icon": "images/symbol_wksheet.png",
+            "parent": "Level 2: A"
+          },
+          {
+            "name": "10",
+            "icon": "images/symbol_wksheet.png",
+            "parent": "Level 2: A"
+          },
+          {
+            "name": "11",
+            "icon": "images/symbol_wksheet.png",
+            "parent": "Level 2: A"
+          },
+          {
+            "name": "12",
+            "icon": "images/symbol_wksheet.png",
+            "parent": "Level 2: A"
+          },
+          {
+            "name": "13",
+            "icon": "images/symbol_wksheet.png",
+            "parent": "Level 2: A"
+          },
+          {
+            "name": "14",
+            "icon": "images/symbol_wksheet.png",
+            "parent": "Level 2: A"
+          },
+          {
+            "name": "15",
+            "icon": "images/symbol_wksheet.png",
+            "parent": "Level 2: A"
+          },
+          {
+            "name": "16",
+            "icon": "images/symbol_wksheet.png",
+            "parent": "Level 2: A"
+          }
+        ]
+      },
+      {
+        "name": "Parent2",
+        "parent": "Top Level",
+         "icon": "images/symbol_dashboard.png",
+        "children": [
+          {
+            "name": "1",
+            "icon": "images/symbol_wksheet.png",
+            "parent": "Level 2: A"
+          },
+          {
+            "name": "2",
+            "icon": "images/symbol_wksheet.png",
+            "parent": "Level 2: A"
+          },
+          {
+            "name": "3",
+            "icon": "images/symbol_wksheet.png",
+            "parent": "Level 2: A"
+          },
+          {
+            "name": "4",
+            "icon": "images/symbol_wksheet.png",
+            "parent": "Level 2: A"
+          },
+          {
+            "name": "5",
+            "icon": "images/symbol_wksheet.png",
+            "parent": "Level 2: A"
+          },
+          {
+            "name": "6",
+            "icon": "images/symbol_wksheet.png",
+            "parent": "Level 2: A"
+          },
+          {
+            "name": "7",
+            "icon": "images/symbol_wksheet.png",
+            "parent": "Level 2: A"
+          },
+          {
+            "name": "8",
+            "icon": "images/symbol_wksheet.png",
+            "parent": "Level 2: A"
+          },
+          {
+            "name": "9",
+            "icon": "images/symbol_wksheet.png",
+            "parent": "Level 2: A"
+          },
+          {
+            "name": "10",
+            "icon": "images/symbol_wksheet.png",
+            "parent": "Level 2: A"
+          },
+          {
+            "name": "11",
+            "icon": "images/symbol_wksheet.png",
+            "parent": "Level 2: A"
+          },
+          {
+            "name": "12",
+            "icon": "images/symbol_wksheet.png",
+            "parent": "Level 2: A"
+          },
+          {
+            "name": "13",
+            "icon": "images/symbol_wksheet.png",
+            "parent": "Level 2: A"
+          },
+          {
+            "name": "14",
+            "icon": "images/symbol_wksheet.png",
+            "parent": "Level 2: A"
+          },
+          {
+            "name": "15",
+            "icon": "images/symbol_wksheet.png",
+            "parent": "Level 2: A"
+          },
+          {
+            "name": "16",
+            "icon": "images/symbol_wksheet.png",
+            "parent": "Level 2: A"
+          }
+        ]
+      } ,
+      {
+        "name": "Parent3",
+        "parent": "Top Level",
+         "icon": "images/symbol_dashboard.png",
+        "children": [
+          {
+            "name": "1",
+            "icon": "images/symbol_wksheet.png",
+            "parent": "Level 2: A"
+          },
+          {
+            "name": "2",
+            "icon": "images/symbol_wksheet.png",
+            "parent": "Level 2: A"
+          },
+          {
+            "name": "3",
+            "icon": "images/symbol_wksheet.png",
+            "parent": "Level 2: A"
+          },
+          {
+            "name": "4",
+            "icon": "images/symbol_wksheet.png",
+            "parent": "Level 2: A"
+          },
+          {
+            "name": "5",
+            "icon": "images/symbol_wksheet.png",
+            "parent": "Level 2: A"
+          },
+          {
+            "name": "6",
+            "icon": "images/symbol_wksheet.png",
+            "parent": "Level 2: A"
+          },
+          {
+            "name": "7",
+            "icon": "images/symbol_wksheet.png",
+            "parent": "Level 2: A"
+          },
+          {
+            "name": "8",
+            "icon": "images/symbol_wksheet.png",
+            "parent": "Level 2: A"
+          },
+          {
+            "name": "9",
+            "icon": "images/symbol_wksheet.png",
+            "parent": "Level 2: A"
+          },
+          {
+            "name": "10",
+            "icon": "images/symbol_wksheet.png",
+            "parent": "Level 2: A"
+          },
+          {
+            "name": "11",
+            "icon": "images/symbol_wksheet.png",
+            "parent": "Level 2: A"
+          },
+          {
+            "name": "12",
+            "icon": "images/symbol_wksheet.png",
+            "parent": "Level 2: A"
+          }
+        ]
+      }
+
+    ]
+  };
+
+var width = 700;
+var height = 650;
+var maxLabel = 120;
+var duration = 500;
+var radius = 2;
+    
+var i = 0;
+var root;
+
+var tree = d3.layout.tree()
+    .nodeSize([30,])
+    .separation(function(a, b) { return ((a.parent == root) && (b.parent == root)) ? 2 : 1; })
+    .size([height, width - 160]);
+
+var diagonal = d3.svg.diagonal()
+    .projection(function(d) { return [d.y, d.x]; });
+
+var svg = d3.select("body").append("svg")
+    .attr("width", width)
+    .attr("height", height)
+        .append("g")
+        .attr("transform", "translate(" + maxLabel + ",0)");
+
+root = json;
+root.x0 = height / 2;
+root.y0 = 0;
+
+
+
+root.children.forEach(collapse);
+
+// console.log(root.children);
+ 
+ root.children.forEach(showmore);
+
+
+
+
+function normalizeNodesDepth(node){
+  var parentIndex = (!!node.parent && node.parent != 'null' && !!node.parent.parent && node.parent.parent != 'null' ) ? node.parent.parent.children.map(e => e.id).indexOf(node.parent.id) : null;
+
+  node.y = node.depth * maxLabel * ((parentIndex != null && !(parentIndex % 2) && (!node.children || !!node.children.length)) ? 1.5 : 1);
+  
+  if(!node.children) { return; }
+  node.children.forEach((child, index) => {
+    normalizeNodesDepth(child);
+  });
+}   
+
+function update(source) {
+    // Compute the new tree layout.
+    var nodes = tree.nodes(root).reverse();
+    var links = tree.links(nodes);
+
+    // Normalize for fixed-depth.
+    //nodes.forEach(function(d) { d.y = d.depth * maxLabel; });
+    normalizeNodesDepth(root); 
+    // Update the nodes…
+    var node = svg.selectAll("g.node")
+        .data(nodes, function(d){ 
+            return d.id || (d.id = ++i); 
+        });
+
+    // Enter any new nodes at the parent's previous position.
+    var nodeEnter = node.enter()
+        .append("g")
+        .attr("class", "node")
+        .attr("transform", function(d){ return "translate(" + source.y0 + "," + source.x0 + ")"; })
+        .on("click", click);
+
+    nodeEnter.append("circle")
+        .attr("r", 0)
+        .style("fill", function(d){ 
+            return d._children ? "lightsteelblue" : "white"; 
+        });
+
+    // nodeEnter.append("text")
+    //     .attr("x", function(d){ 
+    //         var spacing = computeRadius(d) + 12;
+    //         return d.children || d._children ? -spacing : spacing; 
+    //     })
+    //     .attr("dy", "1")
+    //     .attr("text-anchor", function(d){ return d.children || d._children ? "end" : "start"; })
+    //     .text(function(d){ return d.name; })
+    //      .style("fill-opacity", 0);
+   
+
+
+
+ 
+// nodeEnter.append("text")
+//    .attr("x", function(d) { 
+//     return d.children || d._children ? -13 : 13; })
+//    .attr("dy", ".35em")
+
+//    .attr("text-anchor", function(d) { 
+//     return d.children || d._children ? "end" : "start"; })
+//    .text(function(d) { return d.name; })
+//    .style("fill-opacity", 1)
+//      .call(wrap, 400);
+
+
+nodeEnter.append('text')
+        .attr('x', function (d) {
+            return d.children || d._children ? -13 : 13;
+        })
+        .attr('dy', '.35em')
+        .attr('text-anchor', function (d) {
+            return d.children || d._children ? 'end' : 'start';
+        })
+        .text(function (d) {
+            return d.name;
+        })
+        .call(wrap, 150)
+        .style('fill-opacitsy', 1e-6)
+        .attr('class', function (d) {
+            if (d.url != null) {
+                return 'hyper';
+            }
+        })
+        .on('click', function (d) {
+            $('.hyper').attr('style', 'font-weight:normal');
+            d3.select(this).attr('style', 'font-weight:bold');
+        })
+    ;
+ 
+
+
+ function wrap(text, width) {
+    text.each(function () {
+        var text = d3.select(this),
+            words = text.text().split(/\s+/).reverse(),
+            word,
+            line = [],
+            lineNumber = 0,
+            lineHeight = 1.1, // ems
+            x = text.attr('x'),
+            y = text.attr('y'),
+            dy = 0, //parseFloat(text.attr('dy')),
+            tspan = text.text(null)
+                .append('tspan')
+                .attr('x', x)
+                .attr('y', y)
+                .attr('dy', dy + 'em');
+        while (word = words.pop()) {
+            line.push(word);
+            tspan.text(line.join(' '));
+            if (tspan.node().getComputedTextLength() > width) {
+                line.pop();
+                tspan.text(line.join(' '));
+                line = [word];
+                tspan = text.append('tspan')
+                    .attr('x', x)
+                    .attr('y', y)
+                    .attr('dy', lineHeight + dy + 'em')
+                    .text(word);
+            }
+        }
+    });
+}
+ 
+
+
+
+
+
+    // Transition nodes to their new position.
+    var nodeUpdate = node.transition()
+        .duration(duration)
+        .attr("transform", function(d) { return "translate(" + d.y + "," + d.x + ")"; });
+
+    nodeUpdate.select("circle")
+        .attr("r", function(d){ return computeRadius(d); })
+        .style("fill", function(d) { return d._children ? "lightsteelblue" : "#fff"; });
+
+    nodeUpdate.select("text").style("fill-opacity", 1);
+
+    // Transition exiting nodes to the parent's new position.
+    var nodeExit = node.exit().transition()
+        .duration(duration)
+        .attr("transform", function(d) { return "translate(" + source.y + "," + source.x + ")"; })
+        .remove();
+
+    nodeExit.select("circle").attr("r", 0);
+    nodeExit.select("text").style("fill-opacity", 0);
+
+    // Update the links…
+    var link = svg.selectAll("path.link")
+        .data(links, function(d){ return d.target.id; });
+
+    // Enter any new links at the parent's previous position.
+    link.enter().insert("path", "g")
+        .attr("class", "link")
+        .attr("d", function(d){
+            var o = {x: source.x0, y: source.y0};
+            return diagonal({source: o, target: o});
+        });
+
+
+
+ 
+
+
+      var labels = d3.selectAll('text');
+      var maxTextWidth = d3.max(labels[0], function(d) {
+        return d.getComputedTextLength();
+      });
+      console.log(maxTextWidth)
+
+
+
+
+
+    // Transition links to their new position.
+    link.transition()
+        .duration(duration)
+        .attr("d", diagonal);
+
+    // Transition exiting nodes to the parent's new position.
+    link.exit().transition()
+        .duration(duration)
+        .attr("d", function(d){
+            var o = {x: source.x, y: source.y};
+            return diagonal({source: o, target: o});
+        })
+        .remove();
+
+    // Stash the old positions for transition.
+    nodes.forEach(function(d){
+        d.x0 = d.x;
+        d.y0 = d.y;
+    });
+    
+     nodeEnter.append("image")
+      .attr("xlink:href", function(d) { return d.icon; })
+      .attr("x", "-10px")
+      .attr("y", "-10px")
+      .attr("width", "23px")
+      .attr("height", "23px");     
+}
+
+
+
+
+
+function computeRadius(d)
+{
+    if(d.children || d._children) return radius + (radius * nbEndNodes(d) / 10);
+    else return radius;
+}
+
+function nbEndNodes(n)
+{
+    nb = 0;    
+    if(n.children){
+        n.children.forEach(function(c){ 
+            nb += nbEndNodes(c); 
+        });
+    }
+    else if(n._children){
+        n._children.forEach(function(c){ 
+            nb += nbEndNodes(c); 
+        });
+    }
+    else nb++;
+    
+    return nb;
+}
+
+function click(d)
+{
+    if (d.children){
+        d._children = d.children;
+        d.children = null;
+    } 
+    else{
+        d.children = d._children;
+        d._children = null;
+    }
+    update(d);
+}
+
+
+function showmore(d)
+{
+if(d.children.length>10)
+{
+  var total = d.children.length;
+  var more_children =d.children.length-10;
+  var delete_number = d.children.length -d.children.length;
+  d.children.splice(5,d.children.length);
+  var show_more =more_children+5;
+  // console.log("Total: " + total + " More: " + more_children );
+  // console.log(d.children);
+  a =d.children;
+  b={"icon": "images/symbol_wksheet.png",'name':"more + "+ show_more};
+  a.push(b); 
+}
+}
+
+
+
+function collapse(d){
+    if (d.children){
+        // d._children = d.children;
+        // d._children.forEach(collapse);
+        // d.children = null;
+        update(root);
+    }
+}
+
+update(root);
+
+    }
+
+  //]]></script>
+
+</head>
+<body>
+    
+
+  
+  <script>
+    // tell the embed parent frame the height of the content
+    if (window.parent && window.parent.parent){
+      window.parent.parent.postMessage(["resultsFrame", {
+        height: document.body.getBoundingClientRect().height,
+        slug: "gLjck1x9"
+      }], "*")
+    }
+
+    // always overwrite window.name, in case users try to set it manually
+    window.name = "result"
+  </script>
+</body>
+</html>

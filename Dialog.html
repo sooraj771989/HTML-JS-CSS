@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title></title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <script
+    type="text/javascript"
+    src="/js/lib/dummy.js"
+    
+  ></script>
+
+    <link rel="stylesheet" type="text/css" href="/css/result-light.css">
+
+
+  <style id="compiled-css" type="text/css">
+      #shiva
+{
+  width: 100px;
+	height: 100px;
+	background: red;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+  float:left;
+  margin:5px;
+}
+.count
+{
+  line-height: 100px;
+  color:white;
+  margin-left:30px;
+  font-size:25px;
+}
+#talkbubble {
+   width: 120px;
+   height: 80px;
+   background: red;
+   position: relative;
+   -moz-border-radius:    10px;
+   -webkit-border-radius: 10px;
+   border-radius:         10px;
+  float:left;
+  margin:20px;
+}
+#talkbubble:before {
+   content:"";
+   position: absolute;
+   right: 100%;
+   top: 26px;
+   width: 0;
+   height: 0;
+   border-top: 13px solid transparent;
+   border-right: 26px solid red;
+   border-bottom: 13px solid transparent;
+}
+
+  </style>
+
+
+  <!-- TODO: Missing CoffeeScript 2 -->
+
+  <script type="text/javascript">//<![CDATA[
+
+    window.onload=function(){
+      
+$('.count').each(function () {
+    $(this).prop('Counter',0).animate({
+        Counter: $(this).text()
+    }, {
+        duration: 4000,
+        easing: 'swing',
+        step: function (now) {
+            $(this).text(Math.ceil(now));
+        }
+    });
+});
+
+    }
+
+  //]]></script>
+
+</head>
+<body>
+    <div id="shiva"><span class="count">200</span></div>
+<div id="shiva"><span class="count">1000</span></div>
+<div id="shiva"><span class="count">853</span></div>
+<div id="shiva"><span class="count">154</span></div>
+<div id="shiva"><span class="count">10</span></div>
+<div id="shiva"><span class="count">87</span></div>
+<div style="clear:both"></div>
+<div id="talkbubble"><span class="count">1421</span></div>
+<div id="talkbubble"><span class="count">145</span></div>
+<div id="talkbubble"><span class="count">78</span></div>
+<br />
+<br />
+<a href="www.i-visionblog.com">visit tutorial</a>
+<br />
+
+  
+  <script>
+    // tell the embed parent frame the height of the content
+    if (window.parent && window.parent.parent){
+      window.parent.parent.postMessage(["resultsFrame", {
+        height: document.body.getBoundingClientRect().height,
+        slug: "d7gvzd1m"
+      }], "*")
+    }
+
+    // always overwrite window.name, in case users try to set it manually
+    window.name = "result"
+  </script>
+</body>
+</html>
